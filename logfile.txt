@@ -1,0 +1,8 @@
+add function returned a value - 30
+multiply function returned a value - 200
+add function returned a value - 30
+multiply function returned a value - 200
+divide function returned a value - 0.5
+add function returned a value - 30
+multiply function returned a value - 200
+divide function returned a value - 0.5
