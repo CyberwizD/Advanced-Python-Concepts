@@ -4,13 +4,14 @@ import sys
 import getopt
 import socket
 
+'''
 # sys.argv[0] # @index 0 - python <FILENAME>
 filename = sys.argv[1]
 message = sys.argv[2]
 
 with open(filename, 'w+') as file:
     file.write(message)
-
+'''
 
 # Trial
 def func(*args, **kwargs):
@@ -31,12 +32,14 @@ def port_scan(host_, max_port):
 
     for port_ in range(1, int(max_port) + 1):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(0)  # Timeout for the connection attempt
+        sock.settimeout(0.1)  # Timeout for the connection attempt
 
         try:
             scan_result = sock.connect_ex((host, int(port_)))  # connect_ex() returns an error indicator
             if scan_result == 0:
                 print(f"Port {port_} is open!")
+            else:
+                print(f"Port {port_} is closed.")
 
         except socket.error as err:
             print(f"Error scanning port {port_}: {err}")
