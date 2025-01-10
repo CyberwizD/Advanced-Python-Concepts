@@ -1,0 +1,31 @@
+{
+    "age": 20,
+    "city": "New York",
+    "hasChildren": true,
+    "name": "Alice",
+    "relative": {
+        "Hobbies": [
+            "running",
+            "singing",
+            "dancing"
+        ],
+        "LastName": "Doe",
+        "age": 28,
+        "children": [
+            {
+                "age": 5,
+                "firstName": "Alex"
+            },
+            {
+                "age": 7,
+                "firstName": "Bob"
+            }
+        ],
+        "firstName": "John",
+        "hasChildren": true
+    },
+    "titles": [
+        "Engineer",
+        "Programmer"
+    ]
+}
